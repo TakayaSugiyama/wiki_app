@@ -1,0 +1,8 @@
+<h1 style="background: #c2edff;padding: 0.5em;">Wikiページ</h1>
+<h2 style="background: linear-gradient(transparent 70%, #a7d6ff 70%)">ページ</h2>
+{{range .}}
+  <div>
+    <p><a href = "/edit/{{. |html|}}">{{.}}[edit]</a></p>
+    <p><a href = "/view/{{. |html|}}">{{.}}</a></p>
+  </div>
+{{ end }}
